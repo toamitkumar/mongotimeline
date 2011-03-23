@@ -2,8 +2,9 @@ source :rubygems
 
 gem "rails", ">= 3.0.3"
 gem "rack"
-gem "mongoid", "2.0.0.rc.6"
+gem "mongoid", "2.0.0.rc.7"
 gem "bson_ext", "~> 1.2"
+gem "mysql"
 
 # RSpec needs to be in :development group to expose generators
 # and rake tasks without having to type RAILS_ENV=test.

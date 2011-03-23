@@ -1,0 +1,12 @@
+default: &default
+  adapter: mysql
+  username: root
+  password:
+
+development:
+  database: mongo_dev
+  <<: *default
+
+test:
+  database: mongo_test
+  <<: *default
