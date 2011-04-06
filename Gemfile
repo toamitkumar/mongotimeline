@@ -8,10 +8,11 @@ gem "mysql"
 
 # RSpec needs to be in :development group to expose generators
 # and rake tasks without having to type RAILS_ENV=test.
+
 group :development, :test do
   gem "rspec-rails", "~> 2.4.0"
-  gem "ruby-debug",   :platforms => :mri_18
-  gem "ruby-debug19", :platforms => :mri_19
+  gem "ruby-debug", :platform => :mri_18
+  gem "ruby-debug19", :platform => :mri_19
 end
 
 group :test do
@@ -21,3 +22,4 @@ group :test do
   gem "timecop"
   gem "thin"
 end
+
